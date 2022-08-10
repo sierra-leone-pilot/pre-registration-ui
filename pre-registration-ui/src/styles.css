@@ -133,7 +133,10 @@ body {
 }
 
 .wrapper {
-  background: rgba(255, 255, 255, 1) !important;
+  /*background: rgba(255, 255, 255, 1) !important;*/
+   background-image: url("assets/flag.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 
 :host ::ng-deep .ng2-pdf-viewer-container {
