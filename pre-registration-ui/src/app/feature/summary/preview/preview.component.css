@@ -43,7 +43,7 @@ header {
 .spacing {
   padding-right: 50px;
 }
-
+/*
 .preview__header {
   margin: 0px 2rem 20px 2rem;
   padding: 20px 0rem;
@@ -51,6 +51,17 @@ header {
   font-weight: bold;
   color: #ff4081;
 }
+*/
+
+.preview-header {
+padding: 0px 1rem;
+width : 100%;
+font-weight: bold;
+color: #ff4081;
+border-bottom: 1px solid #ff4081;
+}
+
+
 /* 
 .preview__header {
   padding: 0;
@@ -106,7 +117,7 @@ header {
 }
 
 .preview__footer-header {
-  margin: 0px 2rem 20px 2rem;
+ margin: 0px 2rem 20px 2rem;
   padding: 20px 0rem;
   border-bottom: 2px dotted #e6e6e6;
   font-weight: 600;
@@ -191,3 +202,4 @@ td > div{
   visibility: hidden;
   height: 35px;
 }
+

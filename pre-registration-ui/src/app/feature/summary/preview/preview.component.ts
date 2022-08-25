@@ -52,7 +52,9 @@ export class PreviewComponent implements OnInit {
   ControlIdLabelObjects = {};
   readOnlyMode=false;
   userPrefLanguage = localStorage.getItem("userPrefLanguage");
+  userPreferredLangCode = localStorage.getItem("userPrefLanguage");
   userPrefLanguageDir = "";
+  canDeactivateFlag = true;
   isNavigateToDemographic = false;
   dataLoaded = false;
   constructor(
@@ -573,6 +575,10 @@ export class PreviewComponent implements OnInit {
   /**
    * This method navigate the user to demographic page if user clicks on Add New applicant.
    */
+//    openDialog() {
+// //           this.dialog.open(PreviewComponent);
+//            alert("Your Application has been saved successfully.")
+//        }
    async onNewApplication() {
     //first check if data capture languages are in session or not
     const dataCaptureLangsFromSession = localStorage.getItem(appConstants.DATA_CAPTURE_LANGUAGES);
@@ -658,6 +664,12 @@ export class PreviewComponent implements OnInit {
     return dialogRef;
   }
 
+//    openDialog() {
+//       //this.dialog.open(PreviewComponent);
+// //         alert("Your Application has been saved successfully.")
+// //         this.router.navigate([`${this.userPrefLanguage}/pre-registration/demographic/new`]);
+//         }
+
   navigateToDemographic() {
     localStorage.setItem(appConstants.NEW_APPLICANT, "true");
     localStorage.setItem(appConstants.MODIFY_USER_FROM_PREVIEW, "false");
@@ -670,9 +682,29 @@ export class PreviewComponent implements OnInit {
     this.router.navigateByUrl(url + `/${this.preRegId}`);
   }
 
+    navigateDashboard() {
+    this.canDeactivateFlag = false;
+    this.router.navigate([`${this.userPreferredLangCode}/dashboard`]);
+     }
+
   navigateNext() {
     let url = Utils.getURL(this.router.url, "booking", 3);
     url = url + `/${this.preRegId}/pick-center`;
     this.router.navigateByUrl(url);
   }
+  openPopup() {
+          const body = {
+                case: "MESSAGE",
+                title: "SUCCESS",
+                message: "Your application has been saved successfully.",
+                redirectUrl: "${this.userPrefLanguage}/pre-registration/demographic/new",
+              };
+              this.dialog.open(DialougComponent, {
+                width: "400px",
+                data: body,
+              });
+            }
 }
+
+
+
