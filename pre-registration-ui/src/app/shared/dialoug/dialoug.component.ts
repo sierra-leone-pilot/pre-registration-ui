@@ -246,4 +246,5 @@ export class DialougComponent implements OnInit {
   applicationCancelAndDiscardSubmit(selectedOption) {
       this.dialogRef.close(selectedOption);
   }
+
 }

@@ -134,9 +134,10 @@ body {
 
 .wrapper {
   /*background: rgba(255, 255, 255, 1) !important;*/
-   background-image: url(./assets/flag.jpg);
+   background-image: url(./assets/world.jpg);
      background-size: cover;
      background-repeat: no-repeat;
+     background-position: center;
 }
 
 :host ::ng-deep .ng2-pdf-viewer-container {

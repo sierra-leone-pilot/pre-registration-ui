@@ -13,12 +13,13 @@ import { CoreModule } from './core/core.module';
 import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { ConfigService } from 'src/app/core/services/config.service';
-
 const appInitialization = (appConfig: AppConfigService) => {
   return () => {
     return appConfig.loadAppConfig();
   };
 };
+
+
 
 @NgModule({
   declarations: [AppComponent],
