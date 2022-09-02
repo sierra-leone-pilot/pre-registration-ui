@@ -107,12 +107,12 @@
 <mat-card class="preview__button-container" *ngIf="previewData !== undefined && dataLoaded">
   <button (click)="navigateBack()" class="user__btn user__btn-back">{{ previewLabels.action_back }}</button>
   <span class="spacer"></span>
-<!--  <button matTooltip="{{ helpText.add_applicant }}" (click)="onNewApplication()" class="user__btn user__btn-action">-->
-<!--    {{ previewLabels.action_add_applicant }}-->
-<!--  </button>-->
-  <button matTooltip="{{ helpText.add_applicant }}" (click)="openPopup()" class="user__btn user__btn-action">
+ <button matTooltip="{{ helpText.add_applicant }}" (click)="onNewApplication()" class="user__btn user__btn-action">
   {{ previewLabels.action_add_applicant }}
-</button>
+  </button>
+<!--<button matTooltip="{{ helpText.add_applicant }}" (click)="openPopupAddApplicant()" class="user__btn user__btn-action">-->
+<!-- {{ previewLabels.action_add_applicant }}-->
+<!--</button>-->
 <!--  <span class="spacer"></span>-->
   <button (click)="navigateDashboard()" class="user__btn user__btn-action">
     {{ "timeSelection.action_bookLater" | translate }}

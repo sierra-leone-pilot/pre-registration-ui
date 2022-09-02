@@ -692,18 +692,18 @@ export class PreviewComponent implements OnInit {
     url = url + `/${this.preRegId}/pick-center`;
     this.router.navigateByUrl(url);
   }
-  openPopup() {
-          const body = {
-                case: "MESSAGE",
-                title: "SUCCESS",
-                message: "Your application has been saved successfully.",
-                redirectUrl: "${this.userPrefLanguage}/pre-registration/demographic/new",
-              };
-              this.dialog.open(DialougComponent, {
-                width: "400px",
-                data: body,
-              });
-            }
+//   openPopupAddApplicant() {
+//           const body = {
+//                 case: "MESSAGE",
+//                 title: "SUCCESS",
+//                 message: "Your application has been saved successfully.",
+//                 redirectUrl: "${this.userPrefLanguage}/pre-registration/demographic/new",
+//               };
+//               this.dialog.open(DialougComponent, {
+//                 width: "400px",
+//                 data: body,
+//               });
+//             }
 }
 
 
