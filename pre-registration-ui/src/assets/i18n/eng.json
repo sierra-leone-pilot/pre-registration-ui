@@ -369,9 +369,9 @@
   },
   "acknowledgement": {
     "title": "Appointment Confirmed",
-    "message": "The Pre-Registration id and Appointment details have been sent to the registered email id and phone number",
+    "message": "The Registration Number and Appointment details have been sent to the registered email id and phone number",
     "label_name": "Name",
-    "label_pre_id": "Pre Registration ID",
+    "label_pre_id": "Registration Number",
     "label_reg_cntr": "Center Name",
     "label_cntr_contact_number": "Center Contact Number",
     "label_appointment_date_time": "Appointment Date & Time",
@@ -382,10 +382,10 @@
     "label_reg_cntr_dtl": "Center Address"
   },
   "preview": {
-    "title_preview": "Pre-Registration Details",
+    "title_preview": "Registration Details",
     "language": "English",
     "subheading_information": "Personal Information",
-    "label_pre_id": "Application ID",
+    "label_pre_id": "Registration Number",
     "label_name": "Full Name",
     "label_age": "Age",
     "label_DOB": "DOB",
