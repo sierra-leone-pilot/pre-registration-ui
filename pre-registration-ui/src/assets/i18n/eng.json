@@ -456,7 +456,7 @@
     "action_modify_appointment": "Book/Modify Appointment",
     "action_cre_application": "Create New Application ",
     "card": {
-      "text_app_id": "Application ID",
+      "text_app_id": "Registration Number",
       "text_name": "Name",
       "text_appoinment_date": "Appointment Date",
       "text_status": "Status",
